@@ -8,50 +8,48 @@
         alt=""
       />
       <!-- menu_nav -->
-
-      <img class="menu_icon" src="../assets/img/menu_hamburger.png" alt="" />
-      <Navbar :items="menu" />
+      <img
+        @click="isOpen = !isOpen"
+        class="menu_icon"
+        src="../assets/img/menu_hamburger.png"
+        alt=""
+      />
+      <transition name="fade" appear>
+        <div class="menu" v-if="isOpen">
+          <!-- close menu -->
+          <div class="close_menu">
+            <img
+              class="logo_sub"
+              src="../assets/img/avada-music-logo-retina.png"
+              alt=""
+            />
+            <img
+              @click="isOpen = !isOpen"
+              class="close"
+              src="../assets/img/icon_x.png"
+              alt=""
+            />
+          </div>
+          <div class="sub_menu">
+            <div v-for="(item, i) in items" :key="i" class="menu_item">
+              <a :href="item.link"> {{ item.title }} </a>
+            </div>
+          </div>
+        </div>
+      </transition>
     </div>
   </div>
+
   <!-- site_header -->
 </template>
 
 <script>
-import Navbar from "./Navbar.vue";
-
 export default {
   name: "Header",
-  components: {
-    Navbar,
-  },
+  props: ["title", "items"],
   data() {
     return {
-      menu: [
-        {
-          title: "Home",
-          link: "#",
-        },
-        {
-          title: "Meet the Band",
-          link: "#",
-        },
-        {
-          title: "Live Dates",
-          link: "#",
-        },
-        {
-          title: "Latest News",
-          link: "#",
-        },
-        {
-          title: "Albums",
-          link: "#",
-        },
-        {
-          title: "Fans",
-          link: "#",
-        },
-      ],
+      isOpen: false,
     };
   },
 };
@@ -76,9 +74,10 @@ export default {
 }
 
 .top_nav .menu_icon {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   filter: invert(100%);
+  padding: 1rem;
 }
 
 ul > li {
@@ -87,5 +86,51 @@ ul > li {
     text-decoration: none;
     color: white;
   }
+}
+
+.close {
+  width: 70px;
+  height: 70px;
+  filter: invert(100%);
+  padding: 1rem;
+}
+
+.logo_sub {
+  width: 400px;
+  padding: 1.5rem;
+}
+
+.menu_item a {
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ea4a56;
+}
+
+.close_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub_menu {
+  text-align: center;
+}
+
+.fade-enter-active,
+.fade-enter-leave {
+  transition: all 0.5s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  transition: all 0.5s ease-out;
+  opacity: 0;
 }
 </style>

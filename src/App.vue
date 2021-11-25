@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :items="menu" />
     <Main />
     <Footer />
   </div>
@@ -18,9 +18,40 @@ export default {
     Main,
     Footer,
   },
+  data() {
+    return {
+      menu: [
+        {
+          title: "Home",
+          link: "#",
+        },
+        {
+          title: "Meet the Band",
+          link: "#",
+        },
+        {
+          title: "Live Dates",
+          link: "#",
+        },
+        {
+          title: "Latest News",
+          link: "#",
+        },
+        {
+          title: "Albums",
+          link: "#",
+        },
+        {
+          title: "Fans",
+          link: "#",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss">
 @import "./assets/scss/common.scss";
+@import url("https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@0.300;0.600;0.800;1.500 & display=swap");
 </style>
