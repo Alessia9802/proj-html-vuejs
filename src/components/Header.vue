@@ -38,6 +38,13 @@
         </div>
       </transition>
     </div>
+    <!-- background text -->
+    <div class="background_text">
+      <h1>Untold Stories</h1>
+      <p>There is an untold stories behind every favorite song</p>
+      <button class="latest_album">Latest album</button>
+      <button class="live">Live dates</button>
+    </div>
   </div>
 
   <!-- site_header -->
@@ -132,5 +139,34 @@ ul > li {
 .fade-leave-to {
   transition: all 0.5s ease-out;
   opacity: 0;
+}
+
+.background_text {
+  text-align: center;
+  color: white;
+  h1 {
+    font-size: 100px;
+    margin-top: 5rem;
+  }
+  p {
+    padding: 1rem;
+    margin-bottom: 40px;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+  }
+  .latest_album {
+    background-color: #ea4a56;
+    color: white;
+  }
+  .live {
+    border: 1px solid white;
+    color: white;
+    background: unset;
+  }
 }
 </style>
