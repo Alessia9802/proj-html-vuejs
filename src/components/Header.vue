@@ -10,12 +10,24 @@
       <!-- menu_nav -->
 
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Meet the Band</a></li>
-        <li><a href="#">Live Dates</a></li>
-        <li><a href="#">Latest News</a></li>
-        <li><a href="#">Albums</a></li>
-        <li><a href="#">Fans</a></li>
+        <li>
+          <a href="#"> {{ first_voice }} </a>
+        </li>
+        <li>
+          <a href="#"> {{ second_voice }} </a>
+        </li>
+        <li>
+          <a href="#">{{ third_voice }}</a>
+        </li>
+        <li>
+          <a href="#">{{ fourth_voice }}</a>
+        </li>
+        <li>
+          <a href="#">{{ fifth_voice }}</a>
+        </li>
+        <li>
+          <a href="#">{{ sixth_voice }}</a>
+        </li>
       </ul>
       <img class="menu_icon" src="../assets/img/menu_hamburger.png" alt="" />
     </div>
@@ -24,7 +36,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Header",
+  props: {
+    first_voice: String,
+    second_voice: String,
+    third_voice: String,
+    fourth_voice: String,
+    fifth_voice: String,
+    sixth_voice: String,
+  },
+};
 </script>
 
 <style lang="scss">
