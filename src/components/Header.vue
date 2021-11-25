@@ -64,10 +64,11 @@ export default {
   height: 100vh;
 }
 
-/* .top_nav {
+.top_nav {
   justify-content: space-between;
   display: flex;
-} */
+  position: relative;
+}
 
 .top_nav > .logo {
   width: 400px;
