@@ -1,13 +1,6 @@
 <template>
   <div id="app">
-    <Header
-      first_voice="Home"
-      second_voice="Meet the Band"
-      third_voice="Live Dates"
-      fourth_voice="Latest News"
-      fifth_voice="Albums"
-      sixth_voice="Fans"
-    />
+    <Header />
     <Main />
     <Footer />
   </div>
