@@ -6,7 +6,7 @@
       <h1>Music is life</h1>
       <div class="line_break"></div>
       <div class="description">
-        <p>
+        <p class="text_headline">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
           quaerat quisquam eum, ex perspiciatis blanditiis quidem odit minima
           nostrum quae aspernatur reprehenderit similique necessitatibus veniam
@@ -20,7 +20,7 @@
         <h1 class="title_band">Latest Band News</h1>
         <div class="line_break"></div>
         <div class="description">
-          <p>
+          <p class="text_headline">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
             quaerat quisquam eum, ex perspiciatis blanditiis quidem odit minima
             nostrum quae aspernatur reprehenderit similique necessitatibus
@@ -37,6 +37,13 @@
               src="../assets/img/blog_music_techo.jpg"
               alt=""
             />
+            <div class="block card_text">
+              <h4>Technology and music</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                obcaecati.
+              </p>
+            </div>
           </div>
           <div class="columns">
             <div class="guitar">
@@ -45,6 +52,13 @@
                 src="../assets/img/blog-post3-600x900.jpg"
                 alt=""
               />
+              <div class="card_text">
+                <h4>While my guitar gently weeps</h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, obcaecati.
+                </p>
+              </div>
             </div>
             <div class="collection">
               <img
@@ -52,6 +66,13 @@
                 src="../assets/img/blog-post4-600x900.jpg"
                 alt=""
               />
+              <div class="card_text">
+                <h4>It just sounds better</h4>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, obcaecati.
+                </p>
+              </div>
             </div>
           </div>
           <div class="concert_rock">
@@ -60,6 +81,13 @@
               src="../assets/img/blog_flavor_rock-1200x600.jpg"
               alt=""
             />
+            <div class="block card_text">
+              <h4>The flavor of rock</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                obcaecati.
+              </p>
+            </div>
           </div>
         </div>
         <div class="next_bar">
@@ -69,6 +97,13 @@
               src="../assets/img/blog-post1-600x900.jpg"
               alt=""
             />
+            <div class="card_text">
+              <h4>Taking it back to the old school</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                obcaecati.
+              </p>
+            </div>
           </div>
           <div class="legend">
             <img
@@ -76,6 +111,12 @@
               src="../assets/img/blog-post2-600x900.jpg"
               alt=""
             />
+            <div class="card_text">
+              <h4>Sharing the stage with a legend</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -108,8 +149,8 @@ export default {};
   text-align: center;
 }
 
-.music_life p,
-.macro_area p {
+.music_life .text_headline,
+.macro_area .text_headline {
   padding-top: 2rem;
 }
 
@@ -157,20 +198,6 @@ h1 {
   display: flex;
 }
 
-.tech,
-.concert_rock {
-  width: 650px;
-  height: 260px;
-  background-color: #323844;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-
-.tech > .img_tech {
-  width: 100%;
-  height: 100%;
-}
-
 .concert_rock > .img_rock {
   width: 100%;
   height: 100%;
@@ -215,5 +242,43 @@ h1 {
 
 .legend > .img_legend {
   width: 100%;
+}
+
+.tech,
+.concert_rock {
+  width: 650px;
+  height: 260px;
+  background-color: #323844;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.tech > .img_tech {
+  width: 100%;
+  height: 100%;
+}
+
+.block {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: #323844;
+  bottom: 0px;
+}
+
+.card_text {
+  padding: 1rem;
+}
+
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #d64756;
+  padding-bottom: 0.5rem;
+}
+
+.text {
+  color: #666676;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 </style>
