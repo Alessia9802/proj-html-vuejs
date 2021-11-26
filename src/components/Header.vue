@@ -80,11 +80,13 @@ export default {
   padding: 1.5rem;
 }
 
-.top_nav .menu_icon {
+.top_nav .menu_icon,
+.close {
   width: 70px;
   height: 70px;
   filter: invert(100%);
   padding: 1rem;
+  margin: 20px 30px;
 }
 
 ul > li {
@@ -93,13 +95,6 @@ ul > li {
     text-decoration: none;
     color: white;
   }
-}
-
-.close {
-  width: 70px;
-  height: 70px;
-  filter: invert(100%);
-  padding: 1rem;
 }
 
 .logo_sub {
@@ -117,7 +112,7 @@ ul > li {
 .menu {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 98.9vw;
   background-color: #ea4a56;
 }
 
@@ -147,10 +142,13 @@ ul > li {
   h1 {
     font-size: 100px;
     margin-top: 5rem;
+    /* font-family: "Montserrat Alternates";
+    font-weight: 800; */
   }
   p {
     padding: 1rem;
     margin-bottom: 40px;
+    /* font-family: "abhaya-libre"; */
   }
   button {
     padding: 0.5rem 1rem;
@@ -164,9 +162,15 @@ ul > li {
     color: white;
   }
   .live {
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
     background: unset;
+  }
+
+  .live:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
   }
 }
 </style>

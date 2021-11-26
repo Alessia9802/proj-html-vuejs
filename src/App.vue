@@ -53,5 +53,4 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/common.scss";
-@import url("https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@0.300;0.600;0.800;1.500 & display=swap");
 </style>

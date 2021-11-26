@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fontsource/abhaya-libre": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/montserrat-alternates": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.2",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
