@@ -32,17 +32,51 @@
       <div class="container">
         <div class="sidebar">
           <div class="tech">
-            <!-- <img src="../assets/img/blog_music_techo.jpg" alt="" /> -->
+            <img
+              class="img_tech"
+              src="../assets/img/blog_music_techo.jpg"
+              alt=""
+            />
           </div>
           <div class="columns">
-            <div class="guitar"></div>
-            <div class="collection"></div>
+            <div class="guitar">
+              <img
+                class="img_guitar"
+                src="../assets/img/blog-post3-600x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="collection">
+              <img
+                class="img_collection"
+                src="../assets/img/blog-post4-600x900.jpg"
+                alt=""
+              />
+            </div>
           </div>
-          <div class="concert_rock"></div>
+          <div class="concert_rock">
+            <img
+              class="img_rock"
+              src="../assets/img/blog_flavor_rock-1200x600.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <div class="next_bar">
-          <div class="old_school"></div>
-          <div class="legend"></div>
+          <div class="old_school">
+            <img
+              class="img_old"
+              src="../assets/img/blog-post1-600x900.jpg"
+              alt=""
+            />
+          </div>
+          <div class="legend">
+            <img
+              class="img_legend"
+              src="../assets/img/blog-post2-600x900.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -115,8 +149,8 @@ h1 {
 .container {
   position: absolute;
   margin-top: 8rem;
-  background-color: red;
-  width: 1000px;
+  /* background-color: red; */
+  width: 1035px;
   height: 1200px;
   left: 50%;
   margin-left: -500px;
@@ -126,10 +160,20 @@ h1 {
 .tech,
 .concert_rock {
   width: 650px;
-  height: 250px;
-  background-color: salmon;
+  height: 260px;
+  background-color: #323844;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+.tech > .img_tech {
+  width: 100%;
+  height: 100%;
+}
+
+.concert_rock > .img_rock {
+  width: 100%;
+  height: 100%;
 }
 
 .columns {
@@ -138,22 +182,38 @@ h1 {
 .guitar {
   width: 310px;
   height: 600px;
-  background-color: seagreen;
+  background-color: #323844;
   margin: 1rem 1rem 1rem 0;
+}
+
+.guitar > .img_guitar {
+  width: 100%;
 }
 
 .collection {
   width: 310px;
   height: 600px;
-  background-color: rgb(46, 97, 139);
+  background-color: #323844;
   margin: 1rem 1rem 2rem 1rem;
+}
+
+.collection > .img_collection {
+  width: 100%;
 }
 
 .old_school,
 .legend {
-  height: 565px;
+  height: 575px;
   width: 300px;
-  background-color: steelblue;
+  background-color: #323844;
   margin: 0 1rem 2rem;
+}
+
+.old_school > .img_old {
+  width: 100%;
+}
+
+.legend > .img_legend {
+  width: 100%;
 }
 </style>
