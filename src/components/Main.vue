@@ -125,6 +125,23 @@
     <div class="news">
       <p>View all latest news</p>
     </div>
+    <!-- Area quote -->
+    <div class="quote">
+      <div class="text_quote">
+        <p>
+          "I just listened to it and sai to myself, " Man, I really love this
+          album." Still, today, it just sounds so fresh. It sounds full of
+          ideas. These guys knew what they were doing. They're good. And they're
+          inventive. I haven't heard anything this year that's as inventive. I
+          don't really expect to."
+        </p>
+        <img
+          class="play"
+          src="../assets/img/band_interview_play_icon.png"
+          alt=""
+        />
+      </div>
+    </div>
   </div>
   <!-- site_main -->
 </template>
@@ -301,5 +318,32 @@ h4 {
   line-height: 120px;
   font-family: "Montserrat";
   text-transform: uppercase;
+}
+
+.quote {
+  background-image: url("../assets/img/home-testimonial-parallax.jpg");
+  background-size: cover;
+  height: 700px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.text_quote {
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.text_quote p {
+  line-height: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.play {
+  margin-top: 1.5rem;
+  width: 100px;
 }
 </style>
