@@ -28,6 +28,23 @@
           </p>
         </div>
       </div>
+      <!-- griglia -->
+      <div class="container">
+        <div class="sidebar">
+          <div class="tech">
+            <!-- <img src="../assets/img/blog_music_techo.jpg" alt="" /> -->
+          </div>
+          <div class="columns">
+            <div class="guitar"></div>
+            <div class="collection"></div>
+          </div>
+          <div class="concert_rock"></div>
+        </div>
+        <div class="next_bar">
+          <div class="old_school"></div>
+          <div class="legend"></div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- site_main -->
@@ -91,6 +108,52 @@ h1 {
 
 .macro_area {
   background-color: #252a33;
+  height: 1500px;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin-top: 8rem;
+  background-color: red;
+  width: 1000px;
   height: 1200px;
+  left: 50%;
+  margin-left: -500px;
+  display: flex;
+}
+
+.tech,
+.concert_rock {
+  width: 650px;
+  height: 250px;
+  background-color: salmon;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: flex;
+}
+.guitar {
+  width: 310px;
+  height: 600px;
+  background-color: seagreen;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.collection {
+  width: 310px;
+  height: 600px;
+  background-color: rgb(46, 97, 139);
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.old_school,
+.legend {
+  height: 565px;
+  width: 300px;
+  background-color: steelblue;
+  margin: 0 1rem 2rem;
 }
 </style>
