@@ -1,7 +1,6 @@
 <template>
   <div id="site_main">
     <!-- section music is life -->
-
     <div class="music_life">
       <div class="rectangle"></div>
       <h1>Music is life</h1>
@@ -13,6 +12,21 @@
           nostrum quae aspernatur reprehenderit similique necessitatibus veniam
           repellat quod?
         </p>
+      </div>
+    </div>
+    <!-- section latest band news -->
+    <div class="macro_area">
+      <div class="caption">
+        <h1 class="title_band">Latest Band News</h1>
+        <div class="line_break"></div>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            quaerat quisquam eum, ex perspiciatis blanditiis quidem odit minima
+            nostrum quae aspernatur reprehenderit similique necessitatibus
+            veniam repellat quod?
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -39,9 +53,12 @@ export default {};
   left: 50%;
   margin-left: -450px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
 }
 
-.music_life p {
+.music_life p,
+.macro_area p {
   padding-top: 2rem;
 }
 
@@ -50,6 +67,8 @@ h1 {
   padding-top: 50px;
   padding-bottom: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .line_break {
@@ -68,5 +87,10 @@ h1 {
   width: 350px;
   height: 15px;
   background-color: #ea4a56;
+}
+
+.macro_area {
+  background-color: #252a33;
+  height: 1200px;
 }
 </style>

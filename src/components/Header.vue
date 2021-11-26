@@ -112,7 +112,7 @@ ul > li {
 .menu {
   position: absolute;
   height: 100vh;
-  width: 99.1vw;
+  width: 98.9vw;
   background-color: #ea4a56;
 }
 
