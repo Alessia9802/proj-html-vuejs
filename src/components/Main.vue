@@ -121,6 +121,10 @@
         </div>
       </div>
     </div>
+    <!-- View all latest news -->
+    <div class="news">
+      <p>View all latest news</p>
+    </div>
   </div>
   <!-- site_main -->
 </template>
@@ -280,5 +284,22 @@ h4 {
 .text {
   color: #666676;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.news {
+  height: 120px;
+  background-color: #ea4a56;
+  color: white;
+  text-align: center;
+}
+
+.news:hover {
+  background-color: white;
+  color: black;
+}
+.news p {
+  line-height: 120px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 </style>
