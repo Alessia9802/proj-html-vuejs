@@ -41,7 +41,7 @@
     <!-- background text -->
     <div class="background_text">
       <h1>Untold Stories</h1>
-      <p>There is an untold stories behind every favorite song</p>
+      <p class="song">There is an untold stories behind every favorite song</p>
       <button class="latest_album">Latest album</button>
       <button class="live">Live dates</button>
     </div>
@@ -105,14 +105,14 @@ ul > li {
 .menu_item a {
   text-decoration: none;
   color: white;
-  line-height: 50px;
-  font-size: 20px;
+  line-height: 80px;
+  font-size: 30px;
 }
 
 .menu {
   position: absolute;
   height: 100vh;
-  width: 98.9vw;
+  width: 99.1vw;
   background-color: #ea4a56;
 }
 
@@ -123,6 +123,8 @@ ul > li {
 
 .sub_menu {
   text-align: center;
+  font-family: "Montserrat";
+  font-size: 30px;
 }
 
 .fade-enter-active,
@@ -136,14 +138,17 @@ ul > li {
   opacity: 0;
 }
 
+.background_text .song {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .background_text {
   text-align: center;
   color: white;
   h1 {
     font-size: 100px;
     margin-top: 5rem;
-    /* font-family: "Montserrat Alternates";
-    font-weight: 800; */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   p {
     padding: 1rem;
