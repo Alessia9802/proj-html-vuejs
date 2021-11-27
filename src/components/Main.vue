@@ -44,6 +44,10 @@
                 obcaecati.
               </p>
             </div>
+            <!-- hover effect -->
+            <div class="effect_hover">
+              <h3 class="hover_title">Technology and music</h3>
+            </div>
           </div>
           <div class="columns">
             <div class="guitar">
@@ -52,12 +56,16 @@
                 src="../assets/img/blog-post3-600x900.jpg"
                 alt=""
               />
-              <div class="card_text">
+              <div class="side_block card_text">
                 <h4>While my guitar gently weeps</h4>
                 <p class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque, obcaecati.
                 </p>
+              </div>
+              <!-- hover effect -->
+              <div class="effect">
+                <h3 class="title">While my guitar gently weeps</h3>
               </div>
             </div>
             <div class="collection">
@@ -66,12 +74,16 @@
                 src="../assets/img/blog-post4-600x900.jpg"
                 alt=""
               />
-              <div class="card_text">
+              <div class="side_block card_text">
                 <h4>It just sounds better</h4>
                 <p class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque, obcaecati.
                 </p>
+              </div>
+              <!-- hover effect -->
+              <div class="effect">
+                <h3 class="title">It just sounds better</h3>
               </div>
             </div>
           </div>
@@ -88,6 +100,10 @@
                 obcaecati.
               </p>
             </div>
+            <!-- hover effect -->
+            <div class="effect_hover">
+              <h3 class="hover_title">The flavor of rock</h3>
+            </div>
           </div>
         </div>
         <div class="next_bar">
@@ -97,12 +113,16 @@
               src="../assets/img/blog-post1-600x900.jpg"
               alt=""
             />
-            <div class="card_text">
+            <div class="side_block card_text">
               <h4>Taking it back to the old school</h4>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
                 obcaecati.
               </p>
+            </div>
+            <!-- over effect -->
+            <div class="effect_last">
+              <h3>Taking it back to the old school</h3>
             </div>
           </div>
           <div class="legend">
@@ -111,11 +131,18 @@
               src="../assets/img/blog-post2-600x900.jpg"
               alt=""
             />
-            <div class="card_text">
+            <div class="side_block card_text">
               <h4>Sharing the stage with a legend</h4>
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
+            </div>
+            <!-- hover effect -->
+            <div class="effect_last">
+              <h3>
+                Sharing the stage with <br />
+                a legend
+              </h3>
             </div>
           </div>
         </div>
@@ -154,7 +181,7 @@ export default {};
 .music_life {
   text-align: center;
   color: white;
-  height: 250px;
+  height: 340px;
   background-color: #323844;
   margin: auto;
   position: relative;
@@ -172,13 +199,14 @@ export default {};
 
 .music_life .text_headline,
 .macro_area .text_headline {
-  padding-top: 2rem;
+  padding-top: 3rem;
+  color: #686877;
 }
 
 h1 {
-  font-size: 40px;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  font-size: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   text-align: center;
@@ -204,18 +232,17 @@ h1 {
 
 .macro_area {
   background-color: #252a33;
-  height: 1500px;
+  height: 1650px;
   position: relative;
 }
 
 .container {
   position: absolute;
-  margin-top: 8rem;
-  /* background-color: red; */
-  width: 1035px;
-  height: 1200px;
+  margin-top: 10rem;
+  width: 1168px;
+  height: 1300px;
   left: 50%;
-  margin-left: -500px;
+  margin-left: -584px;
   display: flex;
 }
 
@@ -228,10 +255,43 @@ h1 {
   display: flex;
 }
 .guitar {
-  width: 310px;
-  height: 600px;
+  width: 360px;
+  height: 540px;
   background-color: #323844;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 1rem 2rem 0;
+  position: relative;
+}
+
+.effect {
+  width: 0px;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  padding-top: 250px;
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  background-color: #ea4a559f;
+  visibility: hidden;
+}
+
+.guitar:hover .effect,
+.collection:hover .effect {
+  visibility: visible;
+  width: 360px;
+  transition: all 0.5s ease;
+}
+
+.guitar:hover .side_block,
+.collection:hover .side_block {
+  visibility: hidden;
+}
+
+.side_block {
+  background-color: #323844;
+  position: absolute;
+  bottom: 0;
 }
 
 .guitar > .img_guitar {
@@ -239,10 +299,11 @@ h1 {
 }
 
 .collection {
-  width: 310px;
-  height: 600px;
+  width: 360px;
+  height: 540px;
   background-color: #323844;
   margin: 1rem 1rem 2rem 1rem;
+  position: relative;
 }
 
 .collection > .img_collection {
@@ -251,10 +312,31 @@ h1 {
 
 .old_school,
 .legend {
-  height: 575px;
-  width: 300px;
+  height: 577.5px;
+  width: 385px;
   background-color: #323844;
-  margin: 0 1rem 2rem;
+  margin: 0 1rem 3rem;
+  position: relative;
+}
+
+.effect_last {
+  width: 0px;
+  height: 577.5px;
+  text-align: center;
+  color: white;
+  padding-top: 288px;
+  top: 0;
+  position: absolute;
+  font-size: 18px;
+  background-color: #ea4a559f;
+  visibility: hidden;
+}
+
+.old_school:hover .effect_last,
+.legend:hover .effect_last {
+  visibility: visible;
+  width: 385px;
+  transition: all 0.5s ease;
 }
 
 .old_school > .img_old {
@@ -267,12 +349,33 @@ h1 {
 
 .tech,
 .concert_rock {
-  width: 650px;
-  height: 260px;
+  width: 750px;
+  height: 300px;
   background-color: #323844;
   margin-right: 1rem;
   margin-bottom: 1rem;
   position: relative;
+}
+
+.effect_hover {
+  width: 0;
+  height: 300px;
+  position: absolute;
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  background-color: #ea4a559f;
+  top: 0px;
+  visibility: hidden;
+}
+
+.tech:hover .effect_hover,
+.concert_rock:hover .effect_hover {
+  width: 750px;
+  transition: all 0.5s ease;
+  visibility: visible;
 }
 
 .tech > .img_tech {
@@ -286,6 +389,12 @@ h1 {
   height: 40%;
   background-color: #323844;
   bottom: 0px;
+  visibility: visible;
+}
+
+.tech:hover .block,
+.concert_rock:hover .block {
+  visibility: hidden;
 }
 
 .card_text {
@@ -329,7 +438,7 @@ h4 {
   position: relative;
 }
 .text_quote {
-  width: 500px;
+  width: 700px;
   top: 50%;
   left: 50%;
   position: absolute;
@@ -337,13 +446,13 @@ h4 {
 }
 
 .text_quote p {
-  line-height: 30px;
+  line-height: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .play {
-  margin-top: 1.5rem;
-  width: 100px;
+  margin-top: 2rem;
+  width: 90px;
 }
 </style>

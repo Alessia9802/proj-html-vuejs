@@ -146,17 +146,19 @@ ul > li {
   text-align: center;
   color: white;
   h1 {
-    font-size: 100px;
+    font-size: 110px;
     margin-top: 5rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   p {
-    padding: 1rem;
+    /* padding: 1rem; */
+    font-size: 25px;
     margin-bottom: 40px;
     /* font-family: "abhaya-libre"; */
   }
   button {
-    padding: 0.5rem 1rem;
+    width: 180px;
+    padding: 1rem 1.5rem;
     margin: 5px;
     text-transform: uppercase;
     border: none;
