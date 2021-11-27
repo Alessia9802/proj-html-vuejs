@@ -113,7 +113,7 @@ ul > li {
   position: absolute;
   height: 100vh;
   width: 98.9vw;
-  background-color: #ea4a56;
+  background-color: #0088cc;
 }
 
 .close_menu {
@@ -165,7 +165,7 @@ ul > li {
     border-radius: 2px;
   }
   .latest_album {
-    background-color: #ea4a56;
+    background-color: #0088cc;
     color: white;
   }
   .live {

@@ -227,7 +227,7 @@ h1 {
   margin-left: -175px;
   width: 350px;
   height: 15px;
-  background-color: #ea4a56;
+  background-color: #0088cc;
 }
 
 .macro_area {
@@ -272,7 +272,7 @@ h1 {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
-  background-color: #ea4a559f;
+  background-color: #0088cccb;
   visibility: hidden;
 }
 
@@ -328,7 +328,7 @@ h1 {
   top: 0;
   position: absolute;
   font-size: 18px;
-  background-color: #ea4a559f;
+  background-color: #0088cccb;
   visibility: hidden;
 }
 
@@ -366,7 +366,7 @@ h1 {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
-  background-color: #ea4a559f;
+  background-color: #0088cccb;
   top: 0px;
   visibility: hidden;
 }
@@ -403,7 +403,7 @@ h1 {
 
 h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #d64756;
+  color: #0088cc;
   padding-bottom: 0.5rem;
 }
 
@@ -414,7 +414,7 @@ h4 {
 
 .news {
   height: 120px;
-  background-color: #ea4a56;
+  background-color: #0088cc;
   color: white;
   text-align: center;
 }
