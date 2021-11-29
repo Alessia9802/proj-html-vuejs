@@ -4,7 +4,7 @@
       <!-- logo -->
       <img
         class="logo"
-        src="../assets/img/avada-music-logo-retina.png"
+        src="../assets/img/avada-music-logo-retina_color.png"
         alt=""
       />
       <!-- menu_nav -->
@@ -20,7 +20,7 @@
           <div class="close_menu">
             <img
               class="logo_sub"
-              src="../assets/img/avada-music-logo-retina.png"
+              src="../assets/img/avada-music-logo-retina_color.png"
               alt=""
             />
             <img

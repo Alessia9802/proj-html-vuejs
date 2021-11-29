@@ -28,7 +28,7 @@
           </p>
         </div>
       </div>
-      <!-- griglia -->
+      <!-- grid -->
       <div class="container">
         <div class="sidebar">
           <div class="tech">
@@ -164,10 +164,167 @@
         </p>
         <img
           class="play"
-          src="../assets/img/band_interview_play_icon.png"
+          src="../assets/img/band_interview_play_icon_blue.png"
           alt=""
         />
       </div>
+    </div>
+    <!-- Live Dates -->
+    <div class="content_area">
+      <h1>Live Dates</h1>
+      <div class="line_break"></div>
+      <div class="description">
+        <p class="text_headline">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          quaerat quisquam eum, ex perspiciatis blanditiis quidem odit minima
+          nostrum quae aspernatur reprehenderit similique necessitatibus veniam
+          repellat quod?
+        </p>
+      </div>
+      <!-- Accordion -->
+      <div class="container_accordion">
+        <div class="accordion">
+          <!-- first option-->
+          <div class="option">
+            <input type="checkbox" id="toggle1" class="toggle" />
+
+            <label class="title" for="toggle1"
+              >17/08/2020 gem festival 2020 anakalia, georgia
+            </label>
+            <div class="content">
+              <div class="option_img">
+                <img
+                  class="map"
+                  src="../assets/img/staticmap_blue.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text_area">
+                <h5>Untold stories</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="book">Book now</div>
+              </div>
+            </div>
+          </div>
+          <!-- second option -->
+          <div class="option">
+            <input type="checkbox" id="toggle2" class="toggle" />
+
+            <label class="title" for="toggle2"
+              >24/09/2020 groovefest repubblica domenicale
+            </label>
+            <div class="content">
+              <div class="option_img">
+                <img
+                  class="map"
+                  src="../assets/img/staticmap_blue.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text_area">
+                <h5>Untold stories</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="book">Book now</div>
+              </div>
+            </div>
+          </div>
+          <!-- third option -->
+          <div class="option">
+            <input type="checkbox" id="toggle3" class="toggle" />
+
+            <label class="title" for="toggle3"
+              >31/10/2020 oasis festival 2020 marrakech, marocco
+            </label>
+            <div class="content">
+              <div class="option_img">
+                <img
+                  class="map"
+                  src="../assets/img/staticmap_blue.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text_area">
+                <h5>Untold stories</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="book">Book now</div>
+              </div>
+            </div>
+          </div>
+          <!-- fourth option  -->
+          <div class="option">
+            <input type="checkbox" id="toggle4" class="toggle" />
+
+            <label class="title" for="toggle4"
+              >07/11/2020 moga festival - essaouria, marocco
+            </label>
+            <div class="content">
+              <div class="option_img">
+                <img
+                  class="map"
+                  src="../assets/img/staticmap_blue.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text_area">
+                <h5>Untold stories</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="book">Book now</div>
+              </div>
+            </div>
+          </div>
+          <!-- fifth option -->
+          <div class="option">
+            <input type="checkbox" id="toggle5" class="toggle" />
+
+            <label class="title" for="toggle5"
+              >10/12/2020 envision festival - uvita, costa rica</label
+            >
+            <div class="content">
+              <div class="option_img">
+                <img
+                  class="map"
+                  src="../assets/img/staticmap_blue.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="text_area">
+                <h5>Untold stories</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="book">Book now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- View all latest news -->
+    <div class="news">
+      <p>View all latest news</p>
     </div>
   </div>
   <!-- site_main -->
@@ -198,7 +355,8 @@ export default {};
 }
 
 .music_life .text_headline,
-.macro_area .text_headline {
+.macro_area .text_headline,
+.content_area .text_headline {
   padding-top: 3rem;
   color: #686877;
 }
@@ -272,7 +430,7 @@ h1 {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
-  background-color: #0088cccb;
+  background-color: #0088ccaf;
   visibility: hidden;
 }
 
@@ -285,6 +443,11 @@ h1 {
 
 .guitar:hover .side_block,
 .collection:hover .side_block {
+  visibility: hidden;
+}
+
+.old_school:hover .side_block,
+.legend:hover .side_block {
   visibility: hidden;
 }
 
@@ -328,7 +491,7 @@ h1 {
   top: 0;
   position: absolute;
   font-size: 18px;
-  background-color: #0088cccb;
+  background-color: #0088ccaf;
   visibility: hidden;
 }
 
@@ -366,7 +529,7 @@ h1 {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
-  background-color: #0088cccb;
+  background-color: #0088ccaf;
   top: 0px;
   visibility: hidden;
 }
@@ -454,5 +617,111 @@ h4 {
 .play {
   margin-top: 2rem;
   width: 90px;
+}
+
+.container_accordion {
+  margin-top: 10rem;
+}
+
+.content_area {
+  background-color: #252a33;
+  position: relative;
+  height: 950px;
+  margin: 0;
+  /* padding: 0.25em; */
+  width: 100%;
+}
+
+.accordion {
+  margin: 3em auto;
+  max-width: 70em;
+}
+
+.toggle {
+  display: none;
+}
+
+.option {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.title,
+.content {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.2s;
+}
+
+.title {
+  background: #323844;
+  padding: 1em 1em 1em 2.5em;
+  display: block;
+  color: #0088cc;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+.title:after,
+.title:before {
+  content: "";
+  position: absolute;
+  left: 1.25em;
+  top: 1.25em;
+  width: 2.5px;
+  border-radius: 0.5px;
+  height: 0.75em;
+  background-color: white;
+  transition: all 0.2s ease-out;
+}
+.title:after {
+  transform: rotate(90deg);
+}
+
+.content {
+  max-height: 0;
+  display: flex;
+  overflow: hidden;
+  background-color: #323844;
+  p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #727182;
+  }
+  h5 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    padding-bottom: 1rem;
+    padding: 0.5em 1em 1em;
+    color: white;
+  }
+  .map {
+    width: 300px;
+    padding: 1rem;
+  }
+  .book {
+    font-family: "Montserrat";
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 1em;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    width: 180px;
+    height: 30px;
+    background-color: #0088cc;
+  }
+}
+
+.toggle:checked {
+  & + .title + .content {
+    max-height: 600px;
+  }
+  & + .title:before {
+    transform: rotate(90deg) !important;
+  }
 }
 </style>
