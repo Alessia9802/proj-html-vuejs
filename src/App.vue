@@ -2,7 +2,7 @@
   <div id="app">
     <Header :items="menu" />
     <Main />
-    <Footer />
+    <Footer :items="menu" />
   </div>
 </template>
 
