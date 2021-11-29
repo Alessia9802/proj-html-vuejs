@@ -188,7 +188,7 @@
           <div class="option">
             <input type="checkbox" id="toggle1" class="toggle" />
 
-            <label class="title" for="toggle1"
+            <label class="title_option" for="toggle1"
               >17/08/2020 gem festival 2020 anakalia, georgia
             </label>
             <div class="content">
@@ -215,7 +215,7 @@
           <div class="option">
             <input type="checkbox" id="toggle2" class="toggle" />
 
-            <label class="title" for="toggle2"
+            <label class="title_option" for="toggle2"
               >24/09/2020 groovefest repubblica domenicale
             </label>
             <div class="content">
@@ -242,7 +242,7 @@
           <div class="option">
             <input type="checkbox" id="toggle3" class="toggle" />
 
-            <label class="title" for="toggle3"
+            <label class="title_option" for="toggle3"
               >31/10/2020 oasis festival 2020 marrakech, marocco
             </label>
             <div class="content">
@@ -269,7 +269,7 @@
           <div class="option">
             <input type="checkbox" id="toggle4" class="toggle" />
 
-            <label class="title" for="toggle4"
+            <label class="title_option" for="toggle4"
               >07/11/2020 moga festival - essaouria, marocco
             </label>
             <div class="content">
@@ -296,7 +296,7 @@
           <div class="option">
             <input type="checkbox" id="toggle5" class="toggle" />
 
-            <label class="title" for="toggle5"
+            <label class="title_option" for="toggle5"
               >10/12/2020 envision festival - uvita, costa rica</label
             >
             <div class="content">
@@ -646,24 +646,25 @@ h4 {
   margin-bottom: 1em;
 }
 
-.title,
+.title_option,
 .content {
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: all 0.2s;
 }
 
-.title {
+.title_option {
   background: #323844;
   padding: 1em 1em 1em 2.5em;
   display: block;
   color: #0088cc;
   font-family: "Montserrat";
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.title:after,
-.title:before {
+.title_option:after,
+.title_option:before {
   content: "";
   position: absolute;
   left: 1.25em;
@@ -673,8 +674,9 @@ h4 {
   height: 0.75em;
   background-color: white;
   transition: all 0.2s ease-out;
+  cursor: pointer;
 }
-.title:after {
+.title_option:after {
   transform: rotate(90deg);
 }
 
@@ -717,11 +719,14 @@ h4 {
 }
 
 .toggle:checked {
-  & + .title + .content {
+  & + .title_option + .content {
     max-height: 600px;
   }
-  & + .title:before {
+  & + .title_option:before {
     transform: rotate(90deg) !important;
+  }
+  & + .content_area {
+    height: 1000px;
   }
 }
 </style>

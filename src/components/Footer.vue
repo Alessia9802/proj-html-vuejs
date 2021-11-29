@@ -110,6 +110,7 @@ export default {
   text-align: center;
   border-radius: 3px;
   line-height: 50px;
+  cursor: pointer;
 }
 
 .social i {
